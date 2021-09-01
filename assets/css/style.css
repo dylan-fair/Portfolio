@@ -47,7 +47,7 @@ header nav ul {
 header nav ul li a {
     padding: 10px 15px;
     font-weight: lighter;
-    font-size: 1.8vw;
+    font-size: 2vw;
 }
 header nav ul li a:hover {
     background: rgba(0, 0, 0, .5);
