@@ -102,11 +102,17 @@ header nav ul li a:hover {
     align-items: center;
     list-style: none;
 }
+.work ul li {
+    flex-basis: 50%;
+    text-align: center;
+}
 .work ul li img{
-    max-width: 65%;
+    max-width: 60%;
     max-height: 500px;
 }
-
+.work ul li:last-child {
+    max-width: 70%;
+}
 footer {
     background: var(--charcoal);
     display: flex;
@@ -131,4 +137,23 @@ footer ul li a, footer ul li p {
     font-size: 30px;
     font-weight: lighter;
     color: var(--fire-red);
+}
+@media screen and (max-width: 819px) {
+    header h1 {
+        font-size: 30px;
+        padding: 20px 10px 20px 10px;
+    }
+    .hero {
+        flex-direction: column-reverse;
+    }
+    .hero img {
+        width: 100%;
+    }
+    
+}
+@media screen and (max-width: 375px) {
+    header h1 {
+        font-size: 26px;
+    }
+    
 }
