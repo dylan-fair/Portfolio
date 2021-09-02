@@ -3,19 +3,22 @@
     padding: 0;
     box-sizing: border-box;
 }
+/* Setting my main colors*/
 :root {
     --charcoal: #36454F;
     --fire: #FF7700;
     --fire-red: #F73718;
 }
+/* body styles*/
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: lightgray;
 }
+/*basic class*/
 .flex-row {
     display: flex;
 }
-
+/* Start header styles*/
 header{
     padding: 30px 45px;
     display: flex;
@@ -58,6 +61,8 @@ header nav ul li a:hover {
     text-shadow: none;
 
 }
+/*end header styles*/
+/*start hero styles*/
 .hero {
     background-image: url("./images/banner.jpg");
     background-position: center;
@@ -70,6 +75,8 @@ header nav ul li a:hover {
     font-size: 32px;
     margin: 20px;
 }
+/*end hero styles*/
+/* basic class for section titles*/
 .section-title {
     font-size: 48px;
     color: var(--fire);
@@ -80,6 +87,7 @@ header nav ul li a:hover {
     width: 50%;
     text-shadow: 0 0 5px rgba(0, 0, 0, .5);
 }
+/*about my styles*/
 .about-me p {
     line-height: 1.7;
     color: var(--fire-red);
@@ -88,6 +96,7 @@ header nav ul li a:hover {
     margin: 0 auto;
     text-align: center;
 }
+/* my major work styles*/
 .major {
     display: flex;
     flex-wrap: wrap;
@@ -105,6 +114,7 @@ header nav ul li a:hover {
     background-color: var(--charcoal);
     padding: 10px 20px 10px 20px;
 }
+/*rest of the major work styles*/
 .work ul {
     display: flex;
     flex-wrap: wrap;
@@ -127,6 +137,8 @@ header nav ul li a:hover {
 .work ul li h3 {
     color: var(--charcoal);
 }
+/* end work styles*/
+/*footer styles*/
 footer {
     background: var(--charcoal);
     display: flex;
@@ -152,6 +164,7 @@ footer ul li a, footer ul li p {
     font-weight: lighter;
     color: var(--fire-red);
 }
+/* media queires for different screen sizes*/
 @media screen and (max-width: 819px) {
     header h1 {
         font-size: 30px;
