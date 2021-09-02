@@ -21,8 +21,11 @@ header{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    position: sticky;
     background-color: var(--charcoal);
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
 }
 header h1 {
     font-weight: bold;
@@ -93,7 +96,14 @@ header nav ul li a:hover {
 .major img {
     width: 100%;
     height: 400px;
-    border: 3px 3px solid black;
+    border: 3px solid var(--charcoal);
+}
+.major h3 {
+    font-weight: normal;
+    position: absolute;
+    color: var(--fire-red);
+    background-color: var(--charcoal);
+    padding: 10px 20px 10px 20px;
 }
 .work ul {
     display: flex;
@@ -109,9 +119,13 @@ header nav ul li a:hover {
 .work ul li img{
     max-width: 60%;
     max-height: 500px;
+    border: 3px solid var(--charcoal);
 }
 .work ul li:last-child {
     max-width: 70%;
+}
+.work ul li h3 {
+    color: var(--charcoal);
 }
 footer {
     background: var(--charcoal);
@@ -153,7 +167,7 @@ footer ul li a, footer ul li p {
 }
 @media screen and (max-width: 375px) {
     header h1 {
-        font-size: 26px;
+        font-size: 20px;
     }
     
 }
