@@ -8,7 +8,7 @@ A website to showcase my work!
 *CSS
 
 ## Website
-https://dylan-fair.github.io/Profolio/
+https://dylan-fair.github.io/Portfolio/
 
 ## Screen SHot
 ![alt text](./assets/css/images/page-screenshot.png)
